@@ -3,291 +3,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numan Bilal - Healthcare Content Writer | Pakistan</title>
-    <meta name="description" content="Numan Bilal – Expert Healthcare Content Writer based in Pakistan. Specializing in SEO-optimized, medically accurate blog posts, website copy, patient education materials, and content strategy for healthcare brands and clinics.">
-    <meta name="keywords" content="healthcare content writer, medical writer Pakistan, SEO healthcare content, medical blog writer, health article writer">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Numan Bilal - Content Writer | Pakistan</title>
+    <meta name="description" content="Numan Bilal – Professional Content Writer based in Pakistan. Delivering high-quality, SEO-optimized blogs, website copy, and content strategy for global clients.">
+    <meta name="keywords" content="content writer pakistan, seo content writer, freelance content writer, website copywriter">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         :root {
-            --primary-blue: #5a9bd4;
-            --light-blue: #e3f2fd;
-            --accent-green: #4caf50;
-            --text-dark: #2c3e50;
-            --text-light: #ffffff;
-            --gray: #f8f9fa;
+            --navy: #0f172a;
+            --cream: #f8f1e3;
+            --accent: #d97706;
+            --light: #fdfaf0;
+            --text: #334155;
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
         }
-
         body {
-            font-family: 'Roboto', sans-serif;
-            background-color: var(--light-blue);
-            color: var(--text-dark);
-            line-height: 1.7;
+            font-family: 'Inter', sans-serif;
+            background: var(--light);
+            color: var(--text);
+            line-height: 1.8;
         }
-
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
+        .container { 
+            max-width: 1280px; 
+            margin: 0 auto; 
+            padding: 0 1.5rem; 
         }
 
         header {
-            background: var(--primary-blue);
-            color: var(--text-light);
+            background: rgba(15, 23, 42, 0.96);
+            backdrop-filter: blur(12px);
             position: fixed;
             width: 100%;
-            top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+            border-bottom: 1px solid rgba(255,255,255,0.08);
         }
-
         nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.2rem 0;
+            padding: 1.4rem 0;
         }
-
         .logo {
-            font-size: 1.6rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.85rem;
             font-weight: 700;
+            color: white;
+            letter-spacing: -0.5px;
         }
-
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.2rem;
         }
-
         nav ul li a {
-            color: var(--text-light);
+            color: white;
             font-weight: 500;
+            text-decoration: none;
             transition: color 0.3s;
         }
-
-        nav ul li a:hover {
-            color: #e3f2fd;
+        nav ul li a:hover { color: var(--accent); }
+        .menu-toggle { 
+            display: none; 
+            font-size: 1.9rem; 
+            cursor: pointer; 
+            color: white; 
         }
 
-        .menu-toggle {
-            display: none;
-            font-size: 1.8rem;
-            cursor: pointer;
-            color: var(--text-light);
-        }
-
-        /* Hero / Home */
+        /* Hero */
         #hero {
             min-height: 100vh;
-            background: linear-gradient(rgba(90,155,212,0.6), rgba(90,155,212,0.6)),
-                        url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80') center/cover no-repeat;
+            background: linear-gradient(rgba(15,23,42,0.82), rgba(15,23,42,0.82)),
+                        url('https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80') center/cover no-repeat;
             display: flex;
             align-items: center;
-            text-align: center;
             color: white;
-            padding: 2rem;
+            text-align: center;
+            padding-top: 80px;
         }
-
         #hero .content h1 {
-            font-size: clamp(2.8rem, 8vw, 5rem);
-            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(3rem, 8vw, 5.8rem);
+            line-height: 1.05;
+            margin-bottom: 1.3rem;
+            letter-spacing: -1.2px;
         }
-
         #hero .content p {
-            font-size: clamp(1.2rem, 4vw, 1.6rem);
-            max-width: 800px;
-            margin: 0 auto 2.5rem;
+            font-size: clamp(1.2rem, 4vw, 1.65rem);
+            max-width: 780px;
+            margin: 0 auto 2.8rem;
+            opacity: 0.93;
         }
-
         .btn {
-            background: var(--accent-green);
+            background: var(--accent);
             color: white;
-            padding: 0.9rem 2rem;
+            padding: 1.05rem 2.6rem;
             border-radius: 50px;
-            font-weight: 500;
-            margin: 0.5rem;
-            display: inline-block;
-            transition: all 0.3s ease;
-        }
-
-        .btn:hover {
-            background: #3e8e41;
-            transform: translateY(-4px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            font-weight: 600;
             text-decoration: none;
+            display: inline-block;
+            transition: all 0.4s ease;
+            font-size: 1.05rem;
+        }
+        .btn:hover {
+            background: #b45309;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(217, 119, 6, 0.3);
         }
 
-        section {
-            padding: clamp(5rem, 10vw, 8rem) 0;
+        section { 
+            padding: clamp(80px, 12vw, 120px) 0; 
         }
-
         h2 {
+            font-family: 'Playfair Display', serif;
             text-align: center;
-            color: var(--primary-blue);
-            font-size: clamp(2.2rem, 5vw, 3.2rem);
-            margin-bottom: 3rem;
+            font-size: clamp(2.5rem, 6vw, 3.8rem);
+            color: var(--navy);
+            margin-bottom: 3.8rem;
             font-weight: 700;
         }
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.4rem;
         }
 
-        .card {
+        /* Portfolio - Clean Text Cards */
+        .portfolio-card {
             background: white;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-            transition: all 0.3s ease;
+            border-radius: 18px;
+            padding: 2.2rem 2rem;
+            box-shadow: 0 10px 35px rgba(15,23,42,0.07);
+            transition: all 0.4s ease;
+            border: 1px solid #f1e9d8;
         }
-
-        .card:hover {
+        .portfolio-card:hover {
             transform: translateY(-12px);
-            box-shadow: 0 16px 35px rgba(0,0,0,0.14);
+            box-shadow: 0 25px 50px rgba(15,23,42,0.12);
+            border-color: var(--accent);
+        }
+        .portfolio-card h3 {
+            color: var(--navy);
+            font-size: 1.35rem;
+            margin-bottom: 0.9rem;
+            line-height: 1.3;
+        }
+        .portfolio-card p {
+            color: #64748b;
+            margin-bottom: 1.6rem;
+            font-size: 1.02rem;
         }
 
-        .card img {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
+        /* Services & Pricing */
+        #services, #pricing { 
+            background: var(--cream); 
         }
-
-        .card-content {
-            padding: 1.8rem;
+        .service-card, .pricing-card {
+            background: white;
+            border-radius: 18px;
+            padding: 2.4rem 2rem;
+            box-shadow: 0 10px 35px rgba(15,23,42,0.07);
+            transition: all 0.4s ease;
         }
-
-        .card h3 {
-            color: var(--primary-blue);
-            margin-bottom: 1rem;
-            font-size: 1.4rem;
+        .service-card:hover, .pricing-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(15,23,42,0.1);
         }
-
-        .add-btn {
-            display: block;
-            margin: 3rem auto 0;
-            background: var(--primary-blue);
+        .pricing-card.featured {
+            border: 3px solid var(--accent);
+            position: relative;
+        }
+        .pricing-card.featured::before {
+            content: "Most Popular";
+            position: absolute;
+            top: -14px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--accent);
             color: white;
-            padding: 0.9rem 2.5rem;
-            border-radius: 50px;
-            border: none;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.3s;
+            font-size: 0.85rem;
+            padding: 5px 20px;
+            border-radius: 30px;
+            font-weight: 500;
         }
-
-        .add-btn:hover {
-            background: #357abd;
-            transform: translateY(-4px);
-        }
-
-        /* Services Section */
-        #services {
-            background: var(--gray);
-        }
-
-        #services .intro {
-            text-align: center;
-            max-width: 900px;
-            margin: 0 auto 4rem;
-            font-size: 1.15rem;
-            color: #444;
+        .price {
+            font-size: 3.3rem;
+            font-weight: 700;
+            color: var(--navy);
+            margin: 1.2rem 0 0.8rem;
         }
 
         /* About */
         #about .about-flex {
             display: flex;
             align-items: center;
-            gap: 3rem;
+            gap: 5rem;
             flex-wrap: wrap;
             justify-content: center;
         }
-
         #about img {
-            max-width: 320px;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            max-width: 360px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(15,23,42,0.15);
         }
-
-        #about .text {
-            flex: 1;
-            min-width: 300px;
+        #about .text { 
+            flex: 1; 
+            min-width: 320px; 
         }
 
         /* Contact */
         #contact form {
-            max-width: 700px;
+            max-width: 720px;
             margin: 0 auto 3rem;
         }
-
         input, textarea {
             width: 100%;
-            padding: 1rem;
-            margin-bottom: 1.2rem;
-            border: 1px solid #d1e0ff;
-            border-radius: 8px;
-            font-size: 1rem;
+            padding: 1.25rem 1.6rem;
+            margin-bottom: 1.7rem;
+            border: 1px solid #e2d9c2;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            background: white;
         }
-
         button[type="submit"] {
-            background: var(--primary-blue);
+            background: var(--navy);
             color: white;
             border: none;
-            padding: 1rem 2.5rem;
+            padding: 1.2rem 3.2rem;
             border-radius: 50px;
-            cursor: pointer;
             font-size: 1.1rem;
-            transition: all 0.3s;
+            cursor: pointer;
+            transition: all 0.4s;
         }
-
         button[type="submit"]:hover {
-            background: #357abd;
+            background: #1e2937;
             transform: translateY(-4px);
         }
 
-        .contact-info {
-            text-align: center;
-            font-size: 1.1rem;
-            margin: 2rem 0;
-        }
-
-        .social {
-            text-align: center;
-            margin: 2rem 0;
-        }
-
         .social a {
-            font-size: 2.2rem;
+            font-size: 2.6rem;
             margin: 0 1.2rem;
-            color: var(--primary-blue);
-            transition: transform 0.3s;
+            color: var(--navy);
+            transition: all 0.3s;
         }
-
-        .social a:hover {
-            transform: scale(1.15);
+        .social a:hover { 
+            color: var(--accent); 
+            transform: scale(1.18); 
         }
 
         footer {
-            background: var(--primary-blue);
-            color: white;
+            background: var(--navy);
+            color: #cbd5e1;
             text-align: center;
-            padding: 2.5rem 0;
+            padding: 3.8rem 0 2.5rem;
         }
 
-        /* Enhanced Responsiveness */
-        @media (max-width: 1024px) {
-            nav ul { gap: 1.5rem; }
-            #hero .content h1 { font-size: clamp(2.5rem, 7vw, 4rem); }
-        }
-
+        /* Enhanced Mobile Responsiveness */
         @media (max-width: 768px) {
+            .container { padding: 0 1.2rem; }
             .menu-toggle { display: block; }
             nav ul {
                 display: none;
@@ -296,36 +273,40 @@
                 top: 100%;
                 left: 0;
                 width: 100%;
-                background: var(--primary-blue);
-                padding: 1.5rem 0;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                background: var(--navy);
+                padding: 2rem 0;
+                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
             }
             nav ul.active { display: flex; }
-            nav ul li { margin: 1rem 0; text-align: center; font-size: 1.2rem; }
-
-            #about .about-flex { flex-direction: column; text-align: center; }
-            #about img { margin-bottom: 2rem; }
-
-            .grid { gap: 1.8rem; }
+            nav ul li { 
+                text-align: center; 
+                padding: 0.8rem 0; 
+                font-size: 1.15rem;
+            }
+            #about .about-flex { 
+                flex-direction: column; 
+                text-align: center; 
+                gap: 3rem; 
+            }
+            #about img {
+                max-width: 300px;
+            }
+            .grid {
+                gap: 2rem;
+            }
+            .portfolio-card, .service-card, .pricing-card {
+                padding: 2rem 1.6rem;
+            }
         }
 
         @media (max-width: 480px) {
-            .btn { padding: 0.8rem 1.6rem; font-size: 1rem; }
-            h2 { font-size: 2.2rem; }
-            section { padding: 4rem 0 3rem; }
-        }
-
-        body::before {
-            content: '\f0f1';
-            font-family: 'Font Awesome 6 Free';
-            font-weight: 900;
-            position: fixed;
-            top: 50%; left: 50%;
-            transform: translate(-50%, -50%) rotate(-15deg);
-            font-size: 30vw;
-            color: rgba(90,155,212,0.04);
-            pointer-events: none;
-            z-index: -1;
+            .btn {
+                padding: 0.95rem 2.2rem;
+                font-size: 1rem;
+            }
+            section { 
+                padding: 70px 0; 
+            }
         }
     </style>
 </head>
@@ -337,8 +318,9 @@
             <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
             <ul id="navMenu">
                 <li><a href="#hero">Home</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">View My Work</a></li>
                 <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -346,105 +328,125 @@
     </header>
 
     <section id="hero">
-        <div class="content">
+        <div class="container content">
             <h1>Numan Bilal</h1>
-            <p>Expert Healthcare Content Writer — Crafting SEO-optimized, accurate, and engaging medical content for clinics, hospitals, healthtech companies, and wellness brands.</p>
+            <p>Professional Content Writer crafting clear, persuasive, and SEO-optimized content that helps businesses connect with their audience and grow online.</p>
             <div>
                 <a href="#portfolio" class="btn">View My Work</a>
-                <a href="#contact" class="btn">Get in Touch</a>
+                <a href="#contact" class="btn" style="background:#1e2937; margin-left:20px;">Start a Project</a>
             </div>
         </div>
     </section>
 
     <section id="portfolio">
         <div class="container">
-            <h2>My Work</h2>
-            <div class="grid" id="portfolioGrid">
-                <!-- Portfolio items added via JS -->
-            </div>
-            <!-- <button class="add-btn" id="addPortfolioItem">+ Add New Work</button> -->
+            <h2>View My Work</h2>
+            <div class="grid" id="portfolioGrid"></div>
         </div>
     </section>
 
     <section id="services">
         <div class="container">
-            <h2>My Services</h2>
-            <div class="intro">
-                <p>I specialize in creating high-quality, <strong>SEO-optimized healthcare content</strong> that educates audiences, ranks well on search engines, builds trust, and complies with medical standards. From blog articles and patient guides to website copy and content strategies — all tailored to healthcare brands, clinics, and publications.</p>
-            </div>
+            <h2>Services</h2>
             <div class="grid">
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-blog fa-3x" style="color: var(--accent-green); margin-bottom: 1.2rem;"></i>
-                        <h3>Healthcare Blog & Article Writing</h3>
-                        <p>Research-based, SEO-optimized articles on medical topics, wellness, treatments, and prevention — written for both patients and professionals.</p>
-                    </div>
+                <div class="service-card">
+                    <h3>Blog & Article Writing</h3>
+                    <p>In-depth, SEO-optimized blog posts that educate, engage readers, and rank higher on search engines.</p>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-pen-nib fa-3x" style="color: var(--accent-green); margin-bottom: 1.2rem;"></i>
-                        <h3>Medical Website Copy & Service Pages</h3>
-                        <p>Compelling, conversion-focused copy for homepages, service pages, doctor profiles, and patient education sections — optimized for search and trust.</p>
-                    </div>
+                <div class="service-card">
+                    <h3>Homepage & Website Copy</h3>
+                    <p>Compelling homepage content that clearly communicates your brand and converts visitors.</p>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-calendar-alt fa-3x" style="color: var(--accent-green); margin-bottom: 1.2rem;"></i>
-                        <h3>Content Strategy & Planning</h3>
-                        <p>Keyword research, content calendars, pillar-cluster strategies — helping healthcare brands grow organic traffic sustainably.</p>
-                    </div>
+                <div class="service-card">
+                    <h3>Service Page Writing</h3>
+                    <p>Persuasive service pages that highlight benefits and drive inquiries or sales.</p>
                 </div>
-                <div class="card">
-                    <div class="card-content">
-                        <i class="fas fa-edit fa-3x" style="color: var(--accent-green); margin-bottom: 1.2rem;"></i>
-                        <h3>Editing, Proofreading & Fact-Checking</h3>
-                        <p>Ensuring medical accuracy, regulatory compliance, readability, and SEO improvements for existing healthcare content.</p>
-                    </div>
+                <div class="service-card">
+                    <h3>Full Website Content</h3>
+                    <p>Complete website copy including About, FAQ, Contact, and supporting pages.</p>
+                </div>
+                <div class="service-card">
+                    <h3>SEO Content Strategy</h3>
+                    <p>Keyword research, content planning, and strategy to boost your organic traffic sustainably.</p>
                 </div>
             </div>
-            <div style="text-align:center; margin-top:4rem;">
-                <a href="#contact" class="btn">Request a Quote</a>
+        </div>
+    </section>
+
+    <section id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="grid">
+                <div class="pricing-card">
+                    <h3>Basic</h3>
+                    <div class="price">$15</div>
+                    <p>~2000–2500 words</p>
+                    <ul style="list-style:none; margin:1.6rem 0; padding-left:0; font-size:1.02rem;">
+                        <li style="padding:0.55rem 0;">✓ Homepage or Service Page</li>
+                        <li style="padding:0.55rem 0;">✓ Basic SEO</li>
+                        <li style="padding:0.55rem 0;">✓ 1 Revision</li>
+                    </ul>
+                    <a href="#contact" class="btn">Select Basic</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <h3>Standard</h3>
+                    <div class="price">$25</div>
+                    <p>~2000–2500 words</p>
+                    <ul style="list-style:none; margin:1.6rem 0; padding-left:0; font-size:1.02rem;">
+                        <li style="padding:0.55rem 0;">✓ Homepage or Service Page</li>
+                        <li style="padding:0.55rem 0;">✓ Advanced SEO + Keywords</li>
+                        <li style="padding:0.55rem 0;">✓ 2 Revisions</li>
+                        <li style="padding:0.55rem 0;">✓ Meta Titles & Descriptions</li>
+                    </ul>
+                    <a href="#contact" class="btn">Select Standard</a>
+                </div>
+
+                <div class="pricing-card">
+                    <h3>Premium</h3>
+                    <div class="price">$40+</div>
+                    <p>Custom projects</p>
+                    <ul style="list-style:none; margin:1.6rem 0; padding-left:0; font-size:1.02rem;">
+                        <li style="padding:0.55rem 0;">✓ Full website packages</li>
+                        <li style="padding:0.55rem 0;">✓ In-depth research</li>
+                        <li style="padding:0.55rem 0;">✓ Unlimited revisions (fair use)</li>
+                        <li style="padding:0.55rem 0;">✓ Content strategy</li>
+                    </ul>
+                    <a href="#contact" class="btn">Get Custom Quote</a>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
-            <h2>About Numan Bilal</h2>
+            <h2>About Me</h2>
             <div class="about-flex">
                 <img src="images/Numan Bilal. porfolio.webp" alt="Numan Bilal">
                 <div class="text">
-                    <p>With 2+ years of experience as a healthcare content writer based in Pakistan, I help global clients create clear, trustworthy, and search-optimized medical content.</p>
-                    <p>Specialized in translating complex medical topics into accessible language while ensuring accuracy, SEO performance, and audience engagement.</p>
-                    <p><strong>Key strengths:</strong> Medical research, SEO optimization (Ahrefs/Google tools), patient-centered writing, content strategy.</p>
+                    <p>I'm a dedicated content writer based in Pakistan with over 2 years of experience creating high-quality written content for clients worldwide.</p>
+                    <p>I specialize in transforming ideas into clear, engaging, and search-friendly copy that actually delivers results.</p>
+                    <p><strong>Strengths:</strong> SEO optimization, thorough research, persuasive writing, and timely delivery.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" style="background:var(--gray);">
+    <section id="contact" style="background:var(--cream);">
         <div class="container">
-            <h2>Get in Touch</h2>
-            <form
-  action="https://formspree.io/f/mpqjygjd"
-  method="POST"
->
-                <input type="text" placeholder="Your Name" required>
-
-    <input type="email" placeholder="Your Email" name="email">
-  
- 
-    <textarea name="message" placeholder="Your Message" rows="6"></textarea>
-
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
-            <div class="contact-info">
+            <h2>Let's Work Together</h2>
+            <form id="contactForm" action="https://formspree.io/f/mpqjygjd" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Tell me about your project, requirements, or deadline..." rows="7" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <div style="text-align:center; margin:2.8rem 0; font-size:1.1rem;">
                 Email: numanbilal2@gmail.com<br>
                 Phone: +92-309-0111400
             </div>
-            <div class="social">
-                <a href="https://www.linkedin.com/in/numan-bilal-937187245"><i class="fab fa-linkedin"></i></a>
+            <div class="social" style="text-align:center;">
+                <a href="https://www.linkedin.com/in/numan-bilal-937187245" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:numanbilal2@gmail.com"><i class="fa fa-envelope"></i></a>
                 <a href="tel:+923090111400"><i class="fa fa-phone"></i></a>
             </div>
@@ -458,66 +460,44 @@
     </footer>
 
     <script>
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault();
-                document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
-            });
-        });
-
-        // Mobile menu
+        // Mobile menu toggle
         const toggle = document.getElementById('menuToggle');
         const menu = document.getElementById('navMenu');
         toggle.addEventListener('click', () => menu.classList.toggle('active'));
 
-        // Portfolio
-        const grid = document.getElementById('portfolioGrid');
-        const addBtn = document.getElementById('addPortfolioItem');
-
-        const works = [
-            {title:"Illness Prevention Program", desc:"Comprehensive preventive health strategies and screenings.", url:"https://www.enfieldabudhabi.ae/en/regenerative-medicine/illness-prevention-program/"},
-            {title:"Dental Braces", desc:"Guide to orthodontic braces options in Abu Dhabi.", url:"https://www.enfieldabudhabi.ae/en/dentists-abu-dhabi/dental-braces/", img:"https://via.placeholder.com/400x220?text=Dental+Braces"},
-            {title:"IV Drip in Summer Heatwaves", desc:"When and why IV hydration is needed during extreme heat.", url:"https://doctorsathome.ae/who-needs-iv-drip-in-summer-heatwaves/", img:"https://via.placeholder.com/400x220?text=IV+Drip"},
-            {title:"Botox for Saggy Neck", desc:"Non-surgical neck lift using Botox injections.", url:"http://enfieldabudhabi.ae/can-botox-help-a-saggy-neck/", img:"https://via.placeholder.com/400x220?text=Botox+Neck"},
-            {title:"Couples Therapy in Dubai", desc:"Professional relationship counseling services.", url:"https://psychiatristdubai.ae/services/couples-therapy-in-dubai/", img:"https://via.placeholder.com/400x220?text=Couples+Therapy"},
-            {title:"Rhinoplasty (Nose Reshaping)", desc:"Surgical and non-surgical nose correction options.", url:"https://www.enfieldabudhabi.ae/en/cosmetic-surgery/rhinoplasty-nose-reshaping/", img:"https://via.placeholder.com/400x220?text=Rhinoplasty"},
-            {title:"Gardnerella & Pregnancy", desc:"Risks and management of bacterial vaginosis in pregnancy.", url:"https://stdtestdubaiuae.ae/can-gardnerella-affect-pregnancy/", img:"https://via.placeholder.com/400x220?text=Gardnerella"},
-            {title:"In-Body Analysis at Home", desc:"Advanced body composition testing delivered at your doorstep.", url:"https://www.enfieldabudhabi.ae/en/home-healthcare-services/in-body-analysis-at-home/", img:"https://via.placeholder.com/400x220?text=InBody"}
-        ];
-
-        works.forEach(w => {
-            const card = document.createElement('div');
-            card.className = 'card';
-            card.innerHTML = `
-                 
-                <div class="card-content">
-                    <h3>${w.title}</h3>
-                    <p>${w.desc}</p>
-                    <a href="${w.url}" target="_blank" class="btn">Read More</a>
-                </div>`;
-            grid.appendChild(card);
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            });
         });
 
-        addBtn.addEventListener('click', () => {
-            const title = prompt("Title:");
-            if(!title) return;
-            const desc = prompt("Short description:");
-            const url = prompt("Article URL:");
-            // const img = prompt("Image URL (optional):") || `https://via.placeholder.com/400x220?text=${encodeURIComponent(title)}`;
+        // Portfolio Items
+        const works = [
+            { title: "Dermal Fillers Injections", desc: "Cosmetic injectables guide and service page", url: "https://www.enfieldabudhabi.ae/en/cosmetic-injectables/dermal-fillers-injections/" },
+            { title: "Rhinoplasty (Nose Reshaping)", desc: "Cosmetic surgery service content", url: "https://www.enfieldabudhabi.ae/en/cosmetic-surgery/rhinoplasty-nose-reshaping/" },
+            { title: "Vitamin D Tests at Home", desc: "At-home healthcare service page", url: "https://doctorsathome.ae/services/vitamin-d-tests-at-home/" },
+            { title: "ADHD Treatment in Dubai", desc: "Psychiatry and mental health service content", url: "https://psychiatristdubai.ae/services/adhd-treatment-in-dubai/" },
+            { title: "Youcine TV", desc: "Streaming platform content", url: "https://youcinetv.online/" },
+            { title: "Campaigncy", desc: "Marketing campaign content", url: "https://campaigncy.com/" },
+            { title: "Best Clearinghouse for Medical Billing", desc: "In-depth comparison article", url: "https://paymedics.com/best-clearinghouse-for-medical-billing/" },
+            { title: "The Carnivore Karachi", desc: "Restaurant business content", url: "https://thecarnivore.com.pk/karachi/" },
+            { title: "Vatulator", desc: "Financial services content", url: "https://vatulator.co.za/" }
+        ];
 
-            if(title && url){
-                const newCard = document.createElement('div');
-                newCard.className = 'card';
-                newCard.innerHTML = `
-                    <img src="${img}" alt="${title}">
-                    <div class="card-content">
-                        <h3>${title}</h3>
-                        <p>${desc || 'New healthcare article'}</p>
-                        <a href="${url}" target="_blank" class="btn">Read More</a>
-                    </div>`;
-                grid.appendChild(newCard);
-            }
+        const grid = document.getElementById('portfolioGrid');
+        works.forEach(work => {
+            const card = document.createElement('div');
+            card.className = 'portfolio-card';
+            card.innerHTML = `
+                <h3>${work.title}</h3>
+                <p>${work.desc}</p>
+                <a href="${work.url}" target="_blank" class="btn" style="padding:0.8rem 2rem; font-size:0.98rem;">View Project →</a>
+            `;
+            grid.appendChild(card);
         });
     </script>
 </body>

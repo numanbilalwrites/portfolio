@@ -3,592 +3,1052 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Numan Bilal - Expert SEO Content Writer</title>
+    <title>Numan Bilal — SEO Content Writer</title>
     <meta name="description" content="Numan Bilal – Professional Content Writer. Delivering high-quality, SEO-optimized blogs, website copy, and content strategy for global clients.">
     <meta name="keywords" content="content writer, seo content writer, freelance content writer, website copywriter">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         :root {
-            --navy: #0f172a;
-            --cream: #f8f1e3;
-            --accent: #d97706;
-            --light: #fdfaf0;
-            --text: #334155;
+            --ink: #0c0c0c;
+            --paper: #f5f0e8;
+            --gold: #c9922a;
+            --gold-light: #e8c06e;
+            --warm-white: #faf7f2;
+            --muted: #7a7268;
+            --card-bg: #ffffff;
+            --border: rgba(201,146,42,0.2);
         }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        html { scroll-behavior: smooth; }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background: var(--light);
-            color: var(--text);
-            line-height: 1.8;
+            font-family: 'DM Sans', sans-serif;
+            background: var(--ink);
+            color: var(--warm-white);
+            overflow-x: hidden;
         }
-        .container {
-            max-width: 1280px;
-            margin: 0 auto;
-            padding: 0 1.5rem;
-        }
+
+        /* ── NAV ── */
         header {
-            background: rgba(15, 23, 42, 0.96);
-            backdrop-filter: blur(12px);
             position: fixed;
-            width: 100%;
+            top: 0; left: 0; right: 0;
             z-index: 1000;
-            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding: 1.4rem 0;
+            background: rgba(12,12,12,0.85);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+            transition: padding 0.3s;
         }
         nav {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 1.4rem 0;
         }
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.85rem;
-            font-weight: 700;
-            color: white;
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.55rem;
+            color: var(--warm-white);
             letter-spacing: -0.5px;
         }
+        .logo span { color: var(--gold); }
         nav ul {
             display: flex;
             list-style: none;
-            gap: 2.2rem;
+            gap: 2.5rem;
         }
         nav ul li a {
-            color: white;
-            font-weight: 500;
+            font-size: 0.88rem;
+            font-weight: 400;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(250,247,242,0.65);
             text-decoration: none;
             transition: color 0.3s;
         }
-        nav ul li a:hover { color: var(--accent); }
+        nav ul li a:hover { color: var(--gold); }
         .menu-toggle {
             display: none;
-            font-size: 1.9rem;
+            font-size: 1.5rem;
+            color: var(--warm-white);
             cursor: pointer;
-            color: white;
+            background: none;
+            border: none;
         }
 
-        /* HERO - Updated to modern cream theme */
+        /* ── HERO ── */
         #hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, var(--cream), #fdfaf0);
             display: flex;
             align-items: center;
-            color: var(--navy);
-            text-align: center;
+            position: relative;
+            overflow: hidden;
             padding-top: 80px;
         }
-        #hero .content h1 {
-            font-family: 'Great Vibes', cursive;
-            font-size: clamp(4.2rem, 10vw, 7rem);
-            line-height: 1.02;
-            margin-bottom: 0.6rem;
-            letter-spacing: -2.5px;
-            color: var(--navy);
-        }
-        #hero .tagline {
-            font-size: clamp(1.45rem, 4.5vw, 2.05rem);
-            max-width: 720px;
-            margin: 0 auto 1.2rem;
-            font-weight: 600;
-            color: var(--accent);
-            letter-spacing: -0.6px;
-            line-height: 1.25;
-        }
-        #hero .content p {
-            font-size: clamp(1.2rem, 4vw, 1.65rem);
-            max-width: 780px;
-            margin: 0 auto 2.8rem;
-            color: var(--navy);
-            opacity: 0.92;
-        }
-        .btn {
-            background: var(--accent);
-            color: white;
-            padding: 1.05rem 2.6rem;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            display: inline-block;
-            transition: all 0.4s ease;
-            font-size: 1.05rem;
-        }
-        .btn:hover {
-            background: #b45309;
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(217, 119, 6, 0.3);
-        }
-
-        section {
-            padding: clamp(80px, 12vw, 120px) 0;
-        }
-        h2 {
-            font-family: 'Playfair Display', serif;
-            text-align: center;
-            font-size: clamp(2.5rem, 6vw, 3.8rem);
-            color: var(--navy);
-            margin-bottom: 3.8rem;
-            font-weight: 700;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 2.4rem;
-        }
-
-        /* Portfolio - Clean Text Cards */
-        .portfolio-card {
-            background: white;
-            border-radius: 18px;
-            padding: 2.2rem 2rem;
-            box-shadow: 0 10px 35px rgba(15,23,42,0.07);
-            transition: all 0.4s ease;
-            border: 1px solid #f1e9d8;
-        }
-        .portfolio-card:hover {
-            transform: translateY(-12px);
-            box-shadow: 0 25px 50px rgba(15,23,42,0.12);
-            border-color: var(--accent);
-        }
-        .portfolio-card h3 {
-            color: var(--navy);
-            font-size: 1.35rem;
-            margin-bottom: 0.9rem;
-            line-height: 1.3;
-        }
-        .portfolio-card p {
-            color: #64748b;
-            margin-bottom: 1.6rem;
-            font-size: 1.02rem;
-        }
-
-        /* Services & Pricing */
-        #services, #pricing {
-            background: var(--cream);
-        }
-        .service-card, .pricing-card {
-            background: white;
-            border-radius: 18px;
-            padding: 2.4rem 2rem;
-            box-shadow: 0 10px 35px rgba(15,23,42,0.07);
-            transition: all 0.4s ease;
-        }
-        .service-card:hover, .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(15,23,42,0.1);
-        }
-        .pricing-card.featured {
-            border: 3px solid var(--accent);
-            position: relative;
-        }
-        .pricing-card.featured::before {
-            content: "Most Popular";
+        .hero-bg {
             position: absolute;
-            top: -14px;
+            inset: 0;
+            background: 
+                radial-gradient(ellipse 60% 50% at 80% 50%, rgba(201,146,42,0.07) 0%, transparent 70%),
+                radial-gradient(ellipse 40% 60% at 10% 80%, rgba(201,146,42,0.04) 0%, transparent 60%);
+        }
+        .hero-line {
+            position: absolute;
+            top: 0; bottom: 0;
             left: 50%;
-            transform: translateX(-50%);
-            background: var(--accent);
-            color: white;
-            font-size: 0.85rem;
-            padding: 5px 20px;
-            border-radius: 30px;
-            font-weight: 500;
+            width: 1px;
+            background: linear-gradient(to bottom, transparent, rgba(201,146,42,0.15) 30%, rgba(201,146,42,0.15) 70%, transparent);
         }
-        .price {
-            font-size: 3.3rem;
-            font-weight: 700;
-            color: var(--navy);
-            margin: 1.2rem 0 0.8rem;
-        }
-
-        /* Clients Marquee Slider */
-        #clients {
-            background: var(--cream);
-            padding: 70px 0;
-            overflow: hidden;
-        }
-        #clients h2 {
-            margin-bottom: 2.5rem;
-        }
-        .marquee-wrapper {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-        }
-        .marquee-content {
-            display: inline-flex;
-            gap: 4.5rem;
-            animation: marquee-slide 40s linear infinite;
-        }
-        .marquee-content:hover {
-            animation-play-state: paused;
-        }
-        .client-item {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(1.6rem, 3.5vw, 2.1rem);
-            font-weight: 700;
-            color: var(--navy);
-            padding: 1.2rem 3rem;
-            white-space: nowrap;
-            border-radius: 50px;
-            background: rgba(255,255,255,0.7);
-            box-shadow: 0 8px 20px rgba(15,23,42,0.08);
-            transition: all 0.3s ease;
-        }
-        .client-item:hover {
-            transform: scale(1.08);
-            background: white;
-            box-shadow: 0 15px 30px rgba(15,23,42,0.12);
-        }
-        @keyframes marquee-slide {
-            from {
-                transform: translateX(0);
-            }
-            to {
-                transform: translateX(-50%);
-            }
-        }
-
-        /* About */
-        #about .about-flex {
-            display: flex;
-            align-items: center;
+        .hero-inner {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
             gap: 5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        #about img {
-            max-width: 360px;
-            border-radius: 24px;
-            box-shadow: 0 20px 50px rgba(15,23,42,0.15);
-        }
-        #about .text {
-            flex: 1;
-            min-width: 320px;
-        }
-
-        /* Contact */
-        #contact form {
-            max-width: 720px;
-            margin: 0 auto 3rem;
-        }
-        input, textarea {
+            align-items: center;
             width: 100%;
-            padding: 1.25rem 1.6rem;
-            margin-bottom: 1.7rem;
-            border: 1px solid #e2d9c2;
-            border-radius: 12px;
-            font-size: 1.05rem;
-            background: white;
         }
-        button[type="submit"] {
-            background: var(--navy);
-            color: white;
-            border: none;
-            padding: 1.2rem 3.2rem;
-            border-radius: 50px;
-            font-size: 1.1rem;
-            cursor: pointer;
-            transition: all 0.4s;
+        .hero-left { padding-right: 2rem; }
+        .hero-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.7rem;
+            font-size: 0.78rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 2rem;
         }
-        button[type="submit"]:hover {
-            background: #1e2937;
-            transform: translateY(-4px);
+        .hero-eyebrow::before {
+            content: '';
+            width: 28px;
+            height: 1px;
+            background: var(--gold);
         }
-        .social a {
-            font-size: 2.6rem;
-            margin: 0 1.2rem;
-            color: var(--navy);
+        .hero-left h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(3.8rem, 7vw, 6.2rem);
+            line-height: 1.0;
+            letter-spacing: -2px;
+            color: var(--warm-white);
+            margin-bottom: 1.6rem;
+        }
+        .hero-left h1 em {
+            font-style: italic;
+            color: var(--gold-light);
+        }
+        .hero-desc {
+            font-size: 1.08rem;
+            line-height: 1.8;
+            color: rgba(250,247,242,0.6);
+            margin-bottom: 2.8rem;
+            max-width: 480px;
+            font-weight: 300;
+        }
+        .hero-actions { display: flex; gap: 1.2rem; flex-wrap: wrap; }
+        .btn-primary {
+            background: var(--gold);
+            color: var(--ink);
+            padding: 0.9rem 2.2rem;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.04em;
+            text-decoration: none;
             transition: all 0.3s;
         }
-        .social a:hover {
-            color: var(--accent);
-            transform: scale(1.18);
+        .btn-primary:hover {
+            background: var(--gold-light);
+            transform: translateY(-3px);
         }
-        footer {
-            background: var(--navy);
-            color: #cbd5e1;
-            text-align: center;
-            padding: 3.8rem 0 2.5rem;
+        .btn-outline {
+            border: 1px solid rgba(250,247,242,0.25);
+            color: var(--warm-white);
+            padding: 0.9rem 2.2rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            letter-spacing: 0.04em;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        .btn-outline:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .hero-right {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .stat-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 6px;
+            padding: 1.8rem;
+            transition: border-color 0.3s;
+        }
+        .stat-card:hover { border-color: var(--border); }
+        .stat-num {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.8rem;
+            color: var(--gold);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+        .stat-label {
+            font-size: 0.82rem;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: rgba(250,247,242,0.45);
+        }
+        .hero-tagline {
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 6px;
+            padding: 1.8rem;
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.35rem;
+            line-height: 1.6;
+            color: rgba(250,247,242,0.7);
+        }
+        .hero-tagline cite {
+            display: block;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+            font-size: 0.78rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-top: 0.8rem;
         }
 
-        /* Enhanced Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .container { padding: 0 1.2rem; }
+        /* ── SECTION COMMON ── */
+        section { padding: clamp(80px, 10vw, 120px) 0; }
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        .section-label {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.2rem;
+        }
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(255,255,255,0.08);
+            max-width: 80px;
+        }
+        h2.section-title {
+            font-family: 'DM Serif Display', serif;
+            font-size: clamp(2.4rem, 5vw, 4rem);
+            font-weight: 400;
+            letter-spacing: -1.5px;
+            color: var(--warm-white);
+            margin-bottom: 3.5rem;
+            text-align: left;
+            line-height: 1.1;
+        }
+        h2.section-title em {
+            font-style: italic;
+            color: var(--gold-light);
+        }
+        h2.centered { text-align: center; }
+
+        /* ── CLIENTS TICKER ── */
+        #clients {
+            background: #111111;
+            padding: 4rem 0;
+            overflow: hidden;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .ticker-label {
+            text-align: center;
+            font-size: 0.72rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: rgba(250,247,242,0.3);
+            margin-bottom: 2rem;
+        }
+        .marquee-wrapper { overflow: hidden; mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent); }
+        .marquee-content {
+            display: inline-flex;
+            gap: 3rem;
+            animation: ticker 35s linear infinite;
+            white-space: nowrap;
+        }
+        .marquee-content:hover { animation-play-state: paused; }
+        @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+        .client-item {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.25rem;
+            color: rgba(250,247,242,0.4);
+            padding: 0.7rem 2rem;
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 30px;
+            transition: all 0.3s;
+            white-space: nowrap;
+            cursor: default;
+        }
+        .client-item:hover { color: var(--gold); border-color: var(--border); }
+
+        /* ── PORTFOLIO ── */
+        #portfolio { background: #0e0e0e; }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5px;
+        }
+        .port-card {
+            background: rgba(255,255,255,0.02);
+            padding: 2.2rem;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: all 0.4s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .port-card::before {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0;
+            width: 100%; height: 2px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s;
+        }
+        .port-card:hover { background: rgba(201,146,42,0.04); }
+        .port-card:hover::before { transform: scaleX(1); }
+        .port-tag {
+            font-size: 0.7rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .port-card h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--warm-white);
+            margin-bottom: 0.8rem;
+            line-height: 1.3;
+        }
+        .port-card p {
+            font-size: 0.88rem;
+            color: rgba(250,247,242,0.45);
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        .port-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.8rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            text-decoration: none;
+            transition: gap 0.3s;
+        }
+        .port-link:hover { gap: 0.9rem; }
+
+        /* ── SERVICES ── */
+        #services { background: var(--ink); }
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 6px;
+            overflow: hidden;
+        }
+        .service-item {
+            background: var(--ink);
+            padding: 2.8rem;
+            transition: background 0.3s;
+        }
+        .service-item:hover { background: rgba(201,146,42,0.04); }
+        .service-num {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3.5rem;
+            color: rgba(201,146,42,0.15);
+            line-height: 1;
+            margin-bottom: 1.2rem;
+        }
+        .service-item h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            color: var(--warm-white);
+            margin-bottom: 0.8rem;
+        }
+        .service-item p {
+            font-size: 0.9rem;
+            line-height: 1.75;
+            color: rgba(250,247,242,0.5);
+        }
+
+        /* ── PRICING ── */
+        #pricing { background: #0a0a0a; }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+        .price-card {
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 6px;
+            padding: 2.8rem 2.2rem;
+            position: relative;
+            transition: border-color 0.3s, transform 0.3s;
+        }
+        .price-card:hover { border-color: rgba(201,146,42,0.3); transform: translateY(-6px); }
+        .price-card.featured {
+            border-color: var(--gold);
+            background: rgba(201,146,42,0.04);
+        }
+        .featured-badge {
+            position: absolute;
+            top: -1px; right: 2rem;
+            background: var(--gold);
+            color: var(--ink);
+            font-size: 0.7rem;
+            font-weight: 500;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            padding: 0.35rem 0.9rem;
+            border-radius: 0 0 4px 4px;
+        }
+        .price-tier {
+            font-size: 0.72rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: rgba(250,247,242,0.4);
+            margin-bottom: 1.5rem;
+        }
+        .price-amount {
+            font-family: 'DM Serif Display', serif;
+            font-size: 4rem;
+            line-height: 1;
+            color: var(--warm-white);
+            margin-bottom: 0.4rem;
+        }
+        .price-amount sup { font-size: 1.8rem; vertical-align: super; }
+        .price-sub {
+            font-size: 0.82rem;
+            color: rgba(250,247,242,0.4);
+            margin-bottom: 2rem;
+        }
+        .price-divider {
+            height: 1px;
+            background: rgba(255,255,255,0.06);
+            margin-bottom: 2rem;
+        }
+        .price-features {
+            list-style: none;
+            margin-bottom: 2.5rem;
+        }
+        .price-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            font-size: 0.88rem;
+            color: rgba(250,247,242,0.65);
+            padding: 0.5rem 0;
+            line-height: 1.5;
+        }
+        .price-features li::before {
+            content: '';
+            width: 5px;
+            height: 5px;
+            background: var(--gold);
+            border-radius: 50%;
+            margin-top: 0.45rem;
+            flex-shrink: 0;
+        }
+
+        /* ── ABOUT ── */
+        #about { background: var(--ink); }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+        .about-img-wrap {
+            position: relative;
+        }
+        .about-img-wrap::before {
+            content: '';
+            position: absolute;
+            inset: -12px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            pointer-events: none;
+        }
+        .about-img-wrap::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            width: 60%;
+            height: 60%;
+            background: rgba(201,146,42,0.06);
+            border-radius: 4px;
+            z-index: -1;
+        }
+        .about-img-wrap img {
+            width: 100%;
+            border-radius: 4px;
+            display: block;
+            filter: grayscale(20%);
+        }
+        .about-text .section-label { margin-bottom: 1.5rem; }
+        .about-text h2 { margin-bottom: 1.8rem; }
+        .about-text p {
+            font-size: 0.95rem;
+            line-height: 1.85;
+            color: rgba(250,247,242,0.6);
+            margin-bottom: 1.4rem;
+        }
+        .about-text p strong { color: var(--gold); font-weight: 500; }
+        .skills-chips {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 2rem;
+        }
+        .chip {
+            border: 1px solid rgba(201,146,42,0.3);
+            color: var(--gold-light);
+            font-size: 0.78rem;
+            padding: 0.4rem 1rem;
+            border-radius: 30px;
+            letter-spacing: 0.05em;
+        }
+
+        /* ── CONTACT ── */
+        #contact {
+            background: #0a0a0a;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 6rem;
+            align-items: start;
+        }
+        .contact-info h2 { margin-bottom: 1.2rem; }
+        .contact-info p {
+            font-size: 0.95rem;
+            line-height: 1.8;
+            color: rgba(250,247,242,0.5);
+            margin-bottom: 2.5rem;
+        }
+        .contact-detail {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2.5rem;
+        }
+        .c-detail-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.9rem;
+            color: rgba(250,247,242,0.65);
+        }
+        .c-detail-item i { color: var(--gold); width: 16px; }
+        .socials {
+            display: flex;
+            gap: 1.2rem;
+        }
+        .social-btn {
+            width: 42px;
+            height: 42px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(250,247,242,0.5);
+            text-decoration: none;
+            transition: all 0.3s;
+            font-size: 0.95rem;
+        }
+        .social-btn:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+        .contact-form { display: flex; flex-direction: column; gap: 1rem; }
+        .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+        .form-group label {
+            font-size: 0.72rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: rgba(250,247,242,0.4);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 4px;
+            padding: 1rem 1.2rem;
+            font-size: 0.93rem;
+            font-family: 'DM Sans', sans-serif;
+            color: var(--warm-white);
+            transition: border-color 0.3s;
+            outline: none;
+            width: 100%;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            border-color: rgba(201,146,42,0.5);
+        }
+        .contact-form input::placeholder,
+        .contact-form textarea::placeholder {
+            color: rgba(250,247,242,0.25);
+        }
+        .contact-form textarea { resize: vertical; min-height: 140px; }
+        .contact-form button {
+            background: var(--gold);
+            color: var(--ink);
+            border: none;
+            padding: 1.05rem 2.4rem;
+            border-radius: 3px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            font-family: 'DM Sans', sans-serif;
+            letter-spacing: 0.04em;
+            cursor: pointer;
+            transition: all 0.3s;
+            align-self: flex-start;
+        }
+        .contact-form button:hover {
+            background: var(--gold-light);
+            transform: translateY(-2px);
+        }
+
+        /* ── FOOTER ── */
+        footer {
+            background: #070707;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            padding: 2.5rem 0;
+        }
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-logo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.2rem;
+            color: rgba(250,247,242,0.5);
+        }
+        .footer-copy {
+            font-size: 0.8rem;
+            color: rgba(250,247,242,0.25);
+            letter-spacing: 0.05em;
+        }
+
+        /* ── MOBILE ── */
+        @media (max-width: 1024px) {
+            .portfolio-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 820px) {
             .menu-toggle { display: block; }
             nav ul {
                 display: none;
                 flex-direction: column;
                 position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--navy);
-                padding: 2rem 0;
-                box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+                top: 100%; left: 0; right: 0;
+                background: rgba(12,12,12,0.98);
+                padding: 2rem;
+                gap: 1.5rem;
+                border-bottom: 1px solid rgba(255,255,255,0.07);
             }
             nav ul.active { display: flex; }
-            nav ul li {
-                text-align: center;
-                padding: 0.8rem 0;
-                font-size: 1.15rem;
-            }
-            #about .about-flex {
-                flex-direction: column;
-                text-align: center;
-                gap: 3rem;
-            }
-            #about img {
-                max-width: 300px;
-            }
-            .grid {
-                gap: 2rem;
-            }
-            .portfolio-card, .service-card, .pricing-card {
-                padding: 2rem 1.6rem;
-            }
-            .marquee-content {
-                gap: 3rem;
-            }
-            .client-item {
-                font-size: 1.45rem;
-                padding: 1rem 2rem;
-            }
+            .hero-inner { grid-template-columns: 1fr; gap: 3rem; padding-top: 2rem; }
+            .hero-line { display: none; }
+            .hero-left { padding-right: 0; }
+            .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .services-grid { grid-template-columns: 1fr; }
+            .pricing-grid { grid-template-columns: 1fr; max-width: 420px; margin: 0 auto; }
+            .portfolio-grid { grid-template-columns: 1fr; }
+            .footer-inner { flex-direction: column; gap: 1rem; text-align: center; }
         }
         @media (max-width: 480px) {
-            .btn {
-                padding: 0.95rem 2.2rem;
-                font-size: 1rem;
-            }
-            section {
-                padding: 70px 0;
-            }
+            .stat-row { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* ── SCROLL ANIMATIONS ── */
+        .reveal {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">Numan Bilal</div>
-            <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
-            <ul id="navMenu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#portfolio">View My Work</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- HERO SECTION - Modern cream theme with calligraphy name -->
-    <section id="hero">
-        <div class="container content">
-            <h1>Numan Bilal</h1>
-            <p class="tagline">Crafting Words That Captivate, Convert &amp; Conquer</p>
-            <p>Professional SEO Content Writer turning ideas into powerful, persuasive, and search-optimized content that drives real traffic, builds trust, and grows your business.</p>
-            <div>
-                <a href="#portfolio" class="btn">View My Work</a>
-                <a href="#contact" class="btn" style="background:#1e2937; margin-left:20px;">Start a Project</a>
+<header>
+    <nav>
+        <div class="logo">Numan<span>.</span></div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="navMenu">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-line"></div>
+    <div class="hero-inner">
+        <div class="hero-left">
+            <div class="hero-eyebrow">SEO Content Writer</div>
+            <h1>Words That<br><em>Work</em> For<br>Your Brand</h1>
+            <p class="hero-desc">Professional content that drives organic traffic, builds authority, and turns readers into paying customers — tailored for global businesses.</p>
+            <div class="hero-actions">
+                <a href="#portfolio" class="btn-primary">View My Work</a>
+                <a href="#contact" class="btn-outline">Start a Project</a>
             </div>
         </div>
-    </section>
+        <div class="hero-right">
+            <div class="stat-row">
+                <div class="stat-card">
+                    <div class="stat-num">3+</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">50+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                </div>
+            </div>
+            <div class="stat-row">
+                <div class="stat-card">
+                    <div class="stat-num">10+</div>
+                    <div class="stat-label">Global Clients</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-num">100%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+            <div class="hero-tagline">
+                "Turning ideas into powerful, persuasive, and search-optimized content that drives real traffic and grows your business."
+                <cite>— Numan Bilal</cite>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <!-- NEW CLIENTS / PARTNERS SLIDER -->
-    <section id="clients">
-        <div class="container">
-            <h2>Clients &amp; Partners I’ve Worked With</h2>
-            <div class="marquee-wrapper">
-                <div class="marquee-content" id="marqueeContent">
-                    <!-- First set of clients -->
-                    <div class="client-item">Enfield Royal Clinic</div>
-                    <div class="client-item">Campaigncy</div>
-                    <div class="client-item">Paymedics</div>
-                    <div class="client-item">Youcine TV</div>
-                    <div class="client-item">Quantus Health</div>
-                    <div class="client-item">The Carnivore</div>
-                    <div class="client-item">Bright Ideas Communication</div>
-                    <div class="client-item">The Cheek Filler</div>
-                    
-                    <!-- Duplicate set for seamless infinite loop -->
-                    <div class="client-item">Enfield Royal Clinic</div>
-                    <div class="client-item">Campaigncy</div>
-                    <div class="client-item">Paymedics</div>
-                    <div class="client-item">Youcine TV</div>
-                    <div class="client-item">Quantus Health</div>
-                    <div class="client-item">The Carnivore</div>
-                    <div class="client-item">Bright Ideas Communication</div>
-                    <div class="client-item">The Cheek Filler</div>
+<!-- CLIENTS TICKER -->
+<div id="clients">
+    <div class="ticker-label">Trusted By</div>
+    <div class="marquee-wrapper">
+        <div class="marquee-content">
+            <div class="client-item">Enfield Royal Clinic</div>
+            <div class="client-item">Campaigncy</div>
+            <div class="client-item">Paymedics</div>
+            <div class="client-item">Youcine TV</div>
+            <div class="client-item">Quantus Health</div>
+            <div class="client-item">The Carnivore</div>
+            <div class="client-item">Bright Ideas Communication</div>
+            <div class="client-item">The Cheek Filler</div>
+            <div class="client-item">Enfield Royal Clinic</div>
+            <div class="client-item">Campaigncy</div>
+            <div class="client-item">Paymedics</div>
+            <div class="client-item">Youcine TV</div>
+            <div class="client-item">Quantus Health</div>
+            <div class="client-item">The Carnivore</div>
+            <div class="client-item">Bright Ideas Communication</div>
+            <div class="client-item">The Cheek Filler</div>
+        </div>
+    </div>
+</div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+    <div class="container">
+        <div class="section-label reveal">Selected Work</div>
+        <h2 class="section-title reveal">Featured <em>Projects</em></h2>
+        <div class="portfolio-grid" id="portfolioGrid"></div>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+    <div class="container">
+        <div class="section-label reveal">What I Do</div>
+        <h2 class="section-title reveal">Writing <em>Services</em></h2>
+        <div class="services-grid reveal">
+            <div class="service-item">
+                <div class="service-num">01</div>
+                <h3>Blog & Article Writing</h3>
+                <p>In-depth, SEO-optimized blog posts that educate, engage readers, and rank higher on search engines. Built around keyword strategy and E-E-A-T principles.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-num">02</div>
+                <h3>Homepage & Website Copy</h3>
+                <p>Compelling homepage content that clearly communicates your brand value and converts visitors into leads with clarity-first copywriting.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-num">03</div>
+                <h3>Service Page Writing</h3>
+                <p>Persuasive, benefit-led service pages that highlight your unique offering and drive inquiries — built to rank and convert simultaneously.</p>
+            </div>
+            <div class="service-item">
+                <div class="service-num">04</div>
+                <h3>Full Website Packages</h3>
+                <p>Complete website copy — Home, About, Services, FAQ, Contact — delivered with consistent voice, SEO metadata, and strategic structure.</p>
+            </div>
+            <div class="service-item" style="grid-column: 1 / -1;">
+                <div class="service-num">05</div>
+                <h3>SEO Content Strategy</h3>
+                <p>Keyword research, content planning, competitor gap analysis, and editorial roadmaps to build sustainable organic traffic over time.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+    <div class="container">
+        <div class="section-label reveal">Investment</div>
+        <h2 class="section-title centered reveal">Simple, <em>Transparent</em> Pricing</h2>
+        <div class="pricing-grid">
+            <div class="price-card reveal">
+                <div class="price-tier">Basic</div>
+                <div class="price-amount"><sup>$</sup>15</div>
+                <div class="price-sub">Per piece · 2,000–2,500 words</div>
+                <div class="price-divider"></div>
+                <ul class="price-features">
+                    <li>Homepage or Service Page</li>
+                    <li>Basic SEO optimization</li>
+                    <li>1 round of revisions</li>
+                    <li>3–5 day delivery</li>
+                </ul>
+                <a href="#contact" class="btn-outline" style="display:inline-block; padding:0.85rem 2rem; font-size:0.85rem; text-align:center;">Get Started</a>
+            </div>
+            <div class="price-card featured reveal" style="transition-delay:0.1s">
+                <div class="featured-badge">Most Popular</div>
+                <div class="price-tier">Standard</div>
+                <div class="price-amount"><sup>$</sup>25</div>
+                <div class="price-sub">Per piece · 2,000–2,500 words</div>
+                <div class="price-divider"></div>
+                <ul class="price-features">
+                    <li>Homepage or Service Page</li>
+                    <li>Advanced SEO + keyword targeting</li>
+                    <li>2 rounds of revisions</li>
+                    <li>Meta titles & descriptions</li>
+                    <li>2–3 day delivery</li>
+                </ul>
+                <a href="#contact" class="btn-primary" style="display:inline-block; padding:0.85rem 2rem; font-size:0.85rem; text-align:center;">Get Started</a>
+            </div>
+            <div class="price-card reveal" style="transition-delay:0.2s">
+                <div class="price-tier">Premium</div>
+                <div class="price-amount"><sup>$</sup>40<span style="font-size:2rem;">+</span></div>
+                <div class="price-sub">Custom scope · Unlimited pages</div>
+                <div class="price-divider"></div>
+                <ul class="price-features">
+                    <li>Full website packages</li>
+                    <li>Deep-dive research</li>
+                    <li>Unlimited revisions (fair use)</li>
+                    <li>Content strategy included</li>
+                    <li>Priority delivery</li>
+                </ul>
+                <a href="#contact" class="btn-outline" style="display:inline-block; padding:0.85rem 2rem; font-size:0.85rem; text-align:center;">Get a Quote</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-img-wrap reveal">
+                <img src="images/Numan Bilal. porfolio.webp" alt="Numan Bilal — SEO Content Writer">
+            </div>
+            <div class="about-text">
+                <div class="section-label reveal">The Writer</div>
+                <h2 class="section-title reveal">Hi, I'm <em>Numan</em></h2>
+                <p class="reveal">A dedicated content writer with <strong>over 3 years of experience</strong> crafting high-quality, impactful content for clients worldwide. I specialize in transforming ideas into clear, engaging, and search-optimized copy that drives real results.</p>
+                <p class="reveal">My expertise spans website copy, blog articles, product descriptions, email campaigns, and SEO-focused long-form writing. I ensure every piece aligns perfectly with brand voice and business goals while maintaining a natural, reader-friendly tone.</p>
+                <p class="reveal">Having worked with both <strong>Dubai-based and US-based companies</strong>, I bring valuable international exposure and a keen understanding of diverse market needs and cultural nuances.</p>
+                <div class="skills-chips reveal">
+                    <span class="chip">SEO Optimization</span>
+                    <span class="chip">Long-form Writing</span>
+                    <span class="chip">Website Copy</span>
+                    <span class="chip">Keyword Research</span>
+                    <span class="chip">Content Strategy</span>
+                    <span class="chip">Medical Writing</span>
+                    <span class="chip">E-E-A-T</span>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>View My Work</h2>
-            <div class="grid" id="portfolioGrid"></div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <h2>Services</h2>
-            <div class="grid">
-                <div class="service-card">
-                    <h3>Blog & Article Writing</h3>
-                    <p>In-depth, SEO-optimized blog posts that educate, engage readers, and rank higher on search engines.</p>
+<!-- CONTACT -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="section-label reveal">Get In Touch</div>
+                <h2 class="section-title reveal">Let's Build<br><em>Something</em><br>Together</h2>
+                <p class="reveal">Have a project in mind? Tell me about your goals and I'll get back to you within 24 hours with a tailored proposal.</p>
+                <div class="contact-detail reveal">
+                    <div class="c-detail-item">
+                        <i class="fas fa-envelope"></i>
+                        numanbilal2@gmail.com
+                    </div>
+                    <div class="c-detail-item">
+                        <i class="fas fa-phone"></i>
+                        +92 309 0111400
+                    </div>
                 </div>
-                <div class="service-card">
-                    <h3>Homepage & Website Copy</h3>
-                    <p>Compelling homepage content that clearly communicates your brand and converts visitors.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Service Page Writing</h3>
-                    <p>Persuasive service pages that highlight benefits and drive inquiries or sales.</p>
-                </div>
-                <div class="service-card">
-                    <h3>Full Website Content</h3>
-                    <p>Complete website copy including About, FAQ, Contact, and supporting pages.</p>
-                </div>
-                <div class="service-card">
-                    <h3>SEO Content Strategy</h3>
-                    <p>Keyword research, content planning, and strategy to boost your organic traffic sustainably.</p>
+                <div class="socials reveal">
+                    <a href="https://www.linkedin.com/in/numan-bilal-937187245" target="_blank" class="social-btn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:numanbilal2@gmail.com" class="social-btn" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="tel:+923090111400" class="social-btn" aria-label="Phone">
+                        <i class="fas fa-phone"></i>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="pricing">
-        <div class="container">
-            <h2>Pricing</h2>
-            <div class="grid">
-                <div class="pricing-card">
-                    <h3>Basic</h3>
-                    <div class="price">$15</div>
-                    <p>~2000–2500 words</p>
-                    <ul style="list-style:none; margin:1.6rem 0; padding-left:0; font-size:1.02rem;">
-                        <li style="padding:0.55rem 0;">✓ Homepage or Service Page</li>
-                        <li style="padding:0.55rem 0;">✓ Basic SEO</li>
-                        <li style="padding:0.55rem 0;">✓ 1 Revision</li>
-                    </ul>
-                    <a href="#contact" class="btn">Select Basic</a>
-                </div>
-                <div class="pricing-card featured">
-                    <h3>Standard</h3>
-                    <div class="price">$25</div>
-                    <p>~2000–2500 words</p>
-                    <ul style="list-style:none; margin:1.6rem 0; padding-left:0; font-size:1.02rem;">
-                        <li style="padding:0.55rem 0;">✓ Homepage or Service Page</li>
-                        <li style="padding:0.55rem 0;">✓ Advanced SEO + Keywords</li>
-                        <li style="padding:0.55rem 0;">✓ 2 Revisions</li>
-                        <li style="padding:0.55rem 0;">✓ Meta Titles & Descriptions</li>
-                    </ul>
-                    <a href="#contact" class="btn">Select Standard</a>
-                </div>
-                <div class="pricing-card">
-                    <h3>Premium</h3>
-                    <div class="price">$40+</div>
-                    <p>Custom projects</p>
-                    <ul style="list-style:none; margin:1.6rem 0; padding-left:0; font-size:1.02rem;">
-                        <li style="padding:0.55rem 0;">✓ Full website packages</li>
-                        <li style="padding:0.55rem 0;">✓ In-depth research</li>
-                        <li style="padding:0.55rem 0;">✓ Unlimited revisions (fair use)</li>
-                        <li style="padding:0.55rem 0;">✓ Content strategy</li>
-                    </ul>
-                    <a href="#contact" class="btn">Get Custom Quote</a>
-                </div>
+            <div class="reveal">
+                <form class="contact-form" id="contactForm" action="https://formspree.io/f/mpqjygjd" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Smith" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@company.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Project Details</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project, requirements, timeline, and budget..." rows="6" required></textarea>
+                    </div>
+                    <button type="submit">Send Message →</button>
+                </form>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <div class="about-flex">
-                <img src="images/Numan Bilal. porfolio.webp" alt="Numan Bilal">
-                <div class="text">
-                  <p>I am a dedicated and results-driven content writer with over 3 years of experience crafting high-quality, impactful content for clients worldwide. I specialize in transforming ideas into clear, engaging, and search-optimized copy that drives real results — including increased traffic, higher conversions, and stronger brand engagement.</p>
-<p>My expertise covers website copy, blog articles, product descriptions, email campaigns, social media content, and SEO-focused long-form writing. I ensure every piece aligns perfectly with brand voice and business goals while maintaining a natural, reader-friendly tone.</p>
-<p>Having worked with both Dubai-based and US-based companies, I bring valuable international exposure and a keen understanding of diverse market needs and cultural nuances. This global experience allows me to create content that resonates across different regions and audiences.</p>
-<p>I am passionate about using the power of words to help businesses communicate effectively and achieve their marketing objectives in today’s competitive digital landscape.</p>
-                    <p><strong>Strengths:</strong> SEO optimization, thorough research, persuasive writing, and timely delivery.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer>
+    <div class="container footer-inner">
+        <div class="footer-logo">Numan<span style="color:var(--gold)">.</span></div>
+        <div class="footer-copy">© 2026 Numan Bilal. All rights reserved.</div>
+    </div>
+</footer>
 
-    <section id="contact" style="background:var(--cream);">
-        <div class="container">
-            <h2>Let's Work Together</h2>
-            <form id="contactForm" action="https://formspree.io/f/mpqjygjd" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Tell me about your project, requirements, or deadline..." rows="7" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-            <div style="text-align:center; margin:2.8rem 0; font-size:1.1rem;">
-                Email: numanbilal2@gmail.com<br>
-                Phone: +92-309-0111400
-            </div>
-            <div class="social" style="text-align:center;">
-                <a href="https://www.linkedin.com/in/numan-bilal-937187245" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="mailto:numanbilal2@gmail.com"><i class="fa fa-envelope"></i></a>
-                <a href="tel:+923090111400"><i class="fa fa-phone"></i></a>
-            </div>
-        </div>
-    </section>
+<script>
+    // Mobile menu
+    const toggle = document.getElementById('menuToggle');
+    const menu = document.getElementById('navMenu');
+    toggle.addEventListener('click', () => {
+        menu.classList.toggle('active');
+        const icon = toggle.querySelector('i');
+        icon.className = menu.classList.contains('active') ? 'fas fa-times' : 'fas fa-bars';
+    });
 
-    <footer>
-        <div class="container">
-            <p>© 2026 Numan Bilal. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script>
-        // Mobile menu toggle
-        const toggle = document.getElementById('menuToggle');
-        const menu = document.getElementById('navMenu');
-        toggle.addEventListener('click', () => menu.classList.toggle('active'));
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+    // Close menu on link click
+    menu.querySelectorAll('a').forEach(a => {
+        a.addEventListener('click', () => {
+            menu.classList.remove('active');
+            toggle.querySelector('i').className = 'fas fa-bars';
         });
+    });
 
-        // Portfolio Items (unchanged)
-        const works = [
-            { title: "Dermal Fillers Injections", desc: "Cosmetic injectables guide and service page", url: "https://www.enfieldabudhabi.ae/en/cosmetic-injectables/dermal-fillers-injections/" },
-            { title: "Rhinoplasty (Nose Reshaping)", desc: "Cosmetic surgery service content", url: "https://www.enfieldabudhabi.ae/en/cosmetic-surgery/rhinoplasty-nose-reshaping/" },
-            { title: "Vitamin D Tests at Home", desc: "At-home healthcare service page", url: "https://doctorsathome.ae/services/vitamin-d-tests-at-home/" },
-            { title: "ADHD Treatment in Dubai", desc: "Psychiatry and mental health service content", url: "https://psychiatristdubai.ae/services/adhd-treatment-in-dubai/" },
-            { title: "Youcine TV", desc: "Streaming platform content", url: "https://youcinetv.online/" },
-            { title: "Campaigncy", desc: "Marketing campaign content", url: "https://campaigncy.com/" },
-            { title: "Best Clearinghouse for Medical Billing", desc: "In-depth comparison article", url: "https://paymedics.com/best-clearinghouse-for-medical-billing/" },
-            { title: "The Carnivore Karachi", desc: "Restaurant business content", url: "https://thecarnivore.com.pk/karachi/" },
-            { title: "Vatulator", desc: "Financial services content", url: "https://vatulator.co.za/" }
-        ];
-        const grid = document.getElementById('portfolioGrid');
-        works.forEach(work => {
-            const card = document.createElement('div');
-            card.className = 'portfolio-card';
-            card.innerHTML = `
-                <h3>${work.title}</h3>
-                <p>${work.desc}</p>
-                <a href="${work.url}" target="_blank" class="btn" style="padding:0.8rem 2rem; font-size:0.98rem;">View Project →</a>
-            `;
-            grid.appendChild(card);
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', e => {
+            e.preventDefault();
+            const target = document.querySelector(a.getAttribute('href'));
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
         });
-    </script>
+    });
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => entry.target.classList.add('visible'), i * 60);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Portfolio
+    const works = [
+        { tag: "Cosmetic Surgery", title: "Dermal Fillers Injections", desc: "Cosmetic injectables guide and service page for leading clinic", url: "https://www.enfieldabudhabi.ae/en/cosmetic-injectables/dermal-fillers-injections/" },
+        { tag: "Cosmetic Surgery", title: "Rhinoplasty (Nose Reshaping)", desc: "High-converting service content for a cosmetic surgery clinic", url: "https://www.enfieldabudhabi.ae/en/cosmetic-surgery/rhinoplasty-nose-reshaping/" },
+        { tag: "Healthcare", title: "Vitamin D Tests at Home", desc: "At-home healthcare service page focused on trust and conversion", url: "https://doctorsathome.ae/services/vitamin-d-tests-at-home/" },
+        { tag: "Mental Health", title: "ADHD Treatment in Dubai", desc: "Psychiatry and mental health service content — ranked page", url: "https://psychiatristdubai.ae/services/adhd-treatment-in-dubai/" },
+        { tag: "Entertainment", title: "Youcine TV", desc: "Streaming platform — full website content strategy and copy", url: "https://youcinetv.online/" },
+        { tag: "Marketing", title: "Campaigncy", desc: "B2B marketing agency — homepage and service page copy", url: "https://campaigncy.com/" },
+        { tag: "Medical Billing", title: "Best Clearinghouse Guide", desc: "In-depth comparison article driving organic traffic for Paymedics", url: "https://paymedics.com/best-clearinghouse-for-medical-billing/" },
+        { tag: "F&B", title: "The Carnivore Karachi", desc: "Restaurant brand content with local SEO focus", url: "https://thecarnivore.com.pk/karachi/" },
+        { tag: "Finance", title: "Vatulator", desc: "Financial services content for a South African VAT tool", url: "https://vatulator.co.za/" }
+    ];
+
+    const grid = document.getElementById('portfolioGrid');
+    works.forEach((w, i) => {
+        const card = document.createElement('div');
+        card.className = 'port-card reveal';
+        card.style.transitionDelay = (i % 3 * 0.08) + 's';
+        card.innerHTML = `
+            <div class="port-tag">${w.tag}</div>
+            <h3>${w.title}</h3>
+            <p>${w.desc}</p>
+            <a href="${w.url}" target="_blank" class="port-link">View Project <i class="fas fa-arrow-right" style="font-size:0.7rem;"></i></a>
+        `;
+        grid.appendChild(card);
+        observer.observe(card);
+    });
+</script>
 </body>
 </html>
